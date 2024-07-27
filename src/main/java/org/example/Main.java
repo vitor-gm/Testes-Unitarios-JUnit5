@@ -12,7 +12,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        cliente = new Cliente("v", 123456789, "email", LocalDate.of(2012, 5, 9));
+
+        cliente = new Cliente("Vitor", 123456789, "email", LocalDate.of(2012, 5, 9));
 
 
 

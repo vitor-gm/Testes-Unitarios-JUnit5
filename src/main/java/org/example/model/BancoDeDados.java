@@ -8,7 +8,7 @@ public class BancoDeDados {
 
     public Set<Cliente> clientes;
 
-    public BancoDeDados(Set<Cliente> clientes) {
+    public BancoDeDados() {
         this.clientes = new LinkedHashSet<>();
     }
 
