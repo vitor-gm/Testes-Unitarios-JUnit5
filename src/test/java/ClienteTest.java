@@ -14,6 +14,6 @@ public class ClienteTest {
     @Test
     void ClienteNull() {
         Main.main(new String[]{});
-        Assertions.assertTrue(Cliente.getClientes() > 0);
+        Assertions.assertNotNull(Main.cliente);
     }
 }
