@@ -9,7 +9,7 @@ public class Cliente {
     private String cpf;
     private String email;
     private LocalDate nascimento;
-    public static int clientes = 0;
+    public static int clientes;
 
     public Cliente(String nome, String cpf, String email, LocalDate nascimento) {
         this.nome = nome;

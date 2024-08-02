@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        cliente = new Cliente("Vitor", "11111111111", "email", LocalDate.of(2012, 5, 9));
+        //cliente = new Cliente("Vitor", "11111111111", "email", LocalDate.of(2012, 5, 9));
 
 
 
