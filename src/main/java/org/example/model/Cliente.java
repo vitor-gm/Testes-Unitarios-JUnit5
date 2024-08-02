@@ -1,16 +1,17 @@
 package org.example.model;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Cliente {
 
     private String nome;
-    private int cpf;
+    private String cpf;
     private String email;
     private LocalDate nascimento;
     public static int clientes = 0;
 
-    public Cliente(String nome, int cpf, String email, LocalDate nascimento) {
+    public Cliente(String nome, String cpf, String email, LocalDate nascimento) {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
@@ -18,16 +19,26 @@ public class Cliente {
         clientes++;
     }
 
-    public boolean Clientes() {
-        return clientes > 0;
+    public int cpf() {
+        return cpf.length();
+    }
 
+    public boolean clientes() {
+        return clientes == 0;
+
+    }
+
+    public boolean maiorDeIdade() {
+        LocalDate hoje = LocalDate.now();
+        Period idade = Period.between(this.nascimento, hoje);
+        return idade.getYears() >= 18;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
