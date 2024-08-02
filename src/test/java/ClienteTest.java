@@ -1,6 +1,6 @@
 import org.example.Main;
 
-import org.example.model.Cliente;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

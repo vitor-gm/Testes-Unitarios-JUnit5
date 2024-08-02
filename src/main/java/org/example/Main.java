@@ -2,7 +2,6 @@ package org.example;
 
 import org.example.model.Cliente;
 
-import java.time.LocalDate;
 
 
 public class Main {
