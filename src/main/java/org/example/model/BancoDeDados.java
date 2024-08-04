@@ -6,10 +6,10 @@ import java.util.Set;
 
 public class BancoDeDados {
 
-    public Set<Cliente> clientes;
+    public static Set<Cliente> clientes;
 
     public BancoDeDados() {
-        this.clientes = new LinkedHashSet<>();
+        clientes = new LinkedHashSet<>();
     }
 
     public int NumDeClientes() {
